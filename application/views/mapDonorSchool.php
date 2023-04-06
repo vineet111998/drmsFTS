@@ -126,7 +126,18 @@
     $("#select-all").click(function() {
         $(".checkbox").prop("checked", $(this).prop("checked"));
         });
-    
+    $("#submit").click(function() {
+
+        var fundingchapter =$('#donorID').val();
+        let arr = [];
+        let checkboxes = document.querySelectorAll("input[type='checkbox']:checked");
+         for (let i = 0 ; i < checkboxes.length; i++) {
+          arr.push(checkboxes[i].value)
+         }
+        var schoolData=JSON.stringify(arr);
+        schoolData=encodeURIComponent(window.btoa(schoolData));
+        window.location=BASE_URL+"fundingChapter/confirmFundingChapterMapping?fc="+fundingchapter+"&sc="+schoolData;
+      }); 
     
     });
 

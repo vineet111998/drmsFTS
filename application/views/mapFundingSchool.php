@@ -53,10 +53,8 @@
                             
                              <div class="control-group">
                                   <span class="control-label">Funding Chapter</span>
-                                  <span><input type="text" name="fundingChapterDesc" value="<?php echo $fundingchapter[0]['mfc_desc']?>" id="donordesc" disabled>
-                                    <input type="text" name="fundingchapter" value="<?php echo $fundingchapter[0]['mfc_id']?>" id="donorID" disabled>
-                                    <!-- <input type="text" name="anchal" value="<?php echo $fundingchapter[0]['mfc_id']?>" id="donorID" disabled> -->
-                                  </span>
+                                    <input type="text" name="fundingChapterDesc" value="<?php echo $fundingchapter[0]['mfc_desc']?>" id="donordesc" disabled>
+                                    <!-- <input type="text" name="fundingchapter" value="<?php echo $fundingchapter[0]['mfc_id']?>" id="donorID" disabled> -->
                               </div>
                              <table class="table control-group">
                                 <h3>School Details</h3>
